@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- font awesome cdn link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/Mstyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="/home.html" class="logo"><span>E</span>K</a>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="fas fa-bars"></label>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#features" style="display: none;">features</a>
+            <a href="#about" style="display: none;">about</a>
+            <a href="#review" style="display: none;">review</a>
+            <a href="#pricing" style="display: none;">pricing</a>
+            <a href="#contact" style="display: none;">contact</a>
+        </nav>
+    </header>
+    <main id="dekstopView">
+        <section class="home" id="home">
+            <div class="image mobile">
+                <img src="/images/EK V-1.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Aplikasyon mobil <span>Enfomat kreyòl</span></h3>
+                <p>
+                   Telechaje aplikasyon an pou ka swiv tout kou nou yo gratis, 
+                   sou aplikasyon sa wap jwen tout kou yo pa modil, wap gen posibilite 
+                   pou antre nan chanèl Telegram fòmasyon yo
+                </p>
+                <div class="bar-btn"><button class="btn" onclick="openForm()">Telechaje li kounye a</button></div>
+            </div>
+        
+            <div class="image desktop">
+                <img src="images/phone.png" alt="">
+                
+            </div>
+        </section>
+
+
+        <section class="formulaire" id="myForm">
+            <div>
+                <form autocomplete="off" method="post" name="google-sheet">
+                    <div class="image mobile">
+                        <img src="/images/EK V-1.png" alt="">
+                    </div>
+                    <h1><span>Enfomat</span> kreyòl</h1>
+                    <div class="input name">
+                        <input type="name" name="Name" placeholder="Entre Nom ou" required>
+                    </div>
+                    <div class="input phone">
+                        <input type="number" name="Phone" placeholder="Entre Nimewo ou" required>
+                    </div>
+                    <div class="input ref">
+                        <select name="Ref" id="ref">
+                            <option value="W">Whatsapp</option>
+                            <option value="F">Facebook</option>
+                            <option value="T">Tioctok</option>
+                        </select>
+                    </div>
+                    <div class="bar-btn">
+                        <button type="submit">Telechaje</button>
+                        <button onclick="closeForm()">Fèmen</button>
+                    </div>
+                    <a href="https://drive.google.com/uc?export=download&id=1B5Jh4VgNB45Uxa9YjJTDJj3ZOR5_F-qf" id="lien"></a>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="/js/scripti.js" defer></script>
+</body>
+</html>
