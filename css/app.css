@@ -150,6 +150,7 @@ header label{
 
 
 .formulaire{
+    display: none;
     min-width: 350px;
     position: absolute;
     top: 50%;
