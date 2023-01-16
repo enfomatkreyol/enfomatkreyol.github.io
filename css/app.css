@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+:root{
+    --purple:#001aff;
+    --pink:#f85032;
+    --gradient:linear-gradient(90deg, var(--purple), var(--pink));
+}
+
+.mobile{
+    display: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background: black;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+}
+img{
+    width: 100%;
+}
+.bar-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background-color: #001aff;
+    padding:4px 10px 4px 10px;
+    border-radius: 15px;
+    color: white;
+}
+main{
+    width: 80%;
+    margin: auto;
+    border: 1px solid blue;
+    background-color: #fff;
+}
+
+/* an tete sit mwen an*/
+header{
+    position: fixed;
+    top:0; left:50%;
+    transform: translate(-50%, -50%);
+    width:80%;
+    background:#fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding:2rem 9%;
+    margin:35px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 2rem;
+    color:var(--purple);
+}
+
+header .logo span{
+    color:var(--pink);
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color:var(--purple);
+}
+
+header .navbar a:hover{
+    color:var(--pink);
+}
+
+header input{
+    display: none;
+}
+
+header label{
+    font-size: 3rem;
+    color:var(--purple);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.home{
+    height: 100vh;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url(../images/back.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .image{
+    max-width: 200px;
+    margin: 20px;
+    animation: zoom 2s infinite;
+}
+@keyframes zoom {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.2, 1.2);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+.home .content{
+    margin-left: 50px;
+    padding: 10px;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.918);
+}
+
+.home .content h3{
+    font-size: 30px;
+    color:#333;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.home .content h3 span{
+    color:var(--pink);
+    text-transform: uppercase;
+}
+
+.home .content p{
+    font-size: 1.7rem;
+    color:#666;
+    padding:1rem 0;
+}
+
+
+.formulaire{
+    min-width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px;
+}
+.formulaire .image{
+    width: 100px;
+    margin: auto;
+}
+.formulaire form h1{
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-family: impact;
+    text-align: center;
+    color: orangered;
+}
+.formulaire h1 span{
+    color: blue;
+    text-transform: uppercase;
+    font-family: impact;
+}
+
+.input{
+    width: 90%;
+    border: 1px dashed blue;
+    margin: 10px auto;
+}
+
+.input input, select {
+    width: 100%;
+    padding: 5px;
+}
+.formulaire .bar-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.formulaire .bar-btn button{
+    width: 100%;
+}
