@@ -80,5 +80,50 @@
 }
 
 @media (max-width: 800px){
+    .formulaire{
+        min-width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 10px;
+    }
+    .formulaire .image{
+        width: 100px;
+        margin: auto;
+    }
+    .formulaire form h1{
+        font-size: 5.5vw;
+        text-transform: uppercase;
+        font-family: impact;
+        text-align: center;
+        color: orangered;
+    }
+    .formulaire h1 span{
+        color: blue;
+        text-transform: uppercase;
+        font-family: impact;
+    }
     
+    .input{
+        width: 90%;
+        border: 1px dashed blue;
+        margin: 10px auto;
+    }
+    
+    .input input, select {
+        width: 100%;
+        padding: 5px;
+    }
+    .formulaire .bar-btn{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+    }
+    .formulaire .bar-btn button{
+        width: 100%;
+    }
 }

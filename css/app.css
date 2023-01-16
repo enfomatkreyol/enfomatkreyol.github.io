@@ -163,7 +163,7 @@ header label{
     margin: auto;
 }
 .formulaire form h1{
-    font-size: 2vw;
+    font-size: 3vw;
     text-transform: uppercase;
     font-family: impact;
     text-align: center;
@@ -195,3 +195,46 @@ header label{
 .formulaire .bar-btn button{
     width: 100%;
 }
+
+#myProgress{
+    width: 70%;
+    display: none;
+    margin: 10px auto;
+    background-color: rgb(248, 247, 247);
+    padding: 10px;
+    padding-top: 2px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 1px rgb(3, 62, 255);
+}
+#myProgress h1 cite{
+    color: rgb(0, 68, 255);
+    font-size: 7vw;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#myProgress h1 cite{
+    color: rgb(0, 68, 255);
+    font-size: 7vw;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#myBar {
+    width: 10%;
+    height: 10px;
+    background-color: #2d00f7;
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 30px; /* To center it vertically */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    border-radius: 28px;
+  }
