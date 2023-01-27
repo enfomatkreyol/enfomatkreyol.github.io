@@ -1,0 +1,310 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+button{
+    cursor: pointer;
+}
+button:hover{
+    zoom: 1.1;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(17, 0, 255);
+}
+.btn{
+    width: max-content;
+    padding: 10px;
+    margin: auto;
+}
+.btn button{
+    background: black;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px black;
+
+}
+.btn button:hover{
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0px 0px 10px 0px rgb(17, 0, 255);
+    border: none;
+}
+
+
+.dataEntry{
+    background-image: url('/images/back.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.details{
+    display: block;
+    background-color: rgba(255, 255, 255, 0.829);
+    width: 64%;
+    padding: 30px;
+    margin: 20px;
+    color: rgb(10, 10, 10);
+}
+ .details h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 1px;
+ }
+
+ .details h2{
+    text-transform: capitalize;
+    font-size: 30;
+ }
+ .details h3{
+    margin: 2px;
+    padding: 10px;
+ }
+.details ul{
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+ .details ul .li{
+    padding: 10px;
+    list-style: none;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.521);
+    margin: 10px;
+    border-radius:15px;
+    box-shadow: 0px 0px 5px 0px blue;
+ }
+ .details ul .li ol{
+    padding: 1px;
+    list-style: none;
+ }
+ .details ul .li:hover{
+    background-color: rgb(112, 162, 206);
+ }
+ .details .li strong{
+    color: blue;
+ }
+
+ .animation{
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    margin:10px auto;
+    box-shadow: 0px 0px 2px 1px blue;
+}
+.animation p{
+    text-align: center;
+    padding: 20px;
+}
+
+
+.cardForm{
+    display: none;
+    background: rgba(0, 0, 0, 0.616);
+    width: 26%;
+    padding: 10px;
+}
+
+.form{
+    width: max-content;
+    margin: auto;
+    padding: 10px;
+    border: 1px dashed blue;
+    box-shadow: 0px 0px 5px 1px black;
+}
+.form .input{
+    width: 90%;
+    overflow: hidden;
+    margin: 10px auto;
+    border: 1px dashed orangered;
+}
+.form .select{
+    display: flex;
+}
+
+.form .select select{
+    width: 90%;
+    padding: 10px;
+    background-color: none;
+    border: none;
+}
+
+.form input{
+    width: 100%;
+    padding: 10px;
+    background-color: none;
+    border: none;
+}
+.form input:focus, select:focus{
+    outline: none;
+}
+
+.form button{
+    margin: 5px auto;
+    width: 90%;
+    padding: 9px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    
+}
+.buttons button:hover{
+    border: 1px dashed orangered;
+}
+
+
+.formdetails{
+    background-color: white;
+    padding: 10px;
+    margin: 5px auto;
+    font-style: italic;text-align: center;
+}
+
+img{
+    width: 100%;
+}
+
+
+  /* bouton resesosyo isi*/
+  .middle{
+    width: max-content;
+    text-align: center;
+    display: flex;
+    margin: auto;
+  }
+  .middle .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    width: max-content;
+    height: max-content;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3498db;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+  }
+  .middle .btn i{
+    line-height: 1px;
+    font-size: 20px;
+    transition: 0.2s linear;
+  }
+  .middle .btn:hover i{
+    transform: scale(1.3);
+    color: #f1f1f1;
+  }
+  .middle .btn::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #3498db;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+  }
+  .middle .btn:hover::before{
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+  }
+  @keyframes aaa {
+    0%{
+      left: -110%;
+      top: 90%;
+    }50%{
+      left: 10%;
+      top: -30%;
+    }100%{
+      top: -10%;
+      left: -10%;
+    }
+  }
+
+@media (max-width: 800px){
+      .details h1{
+            font-size: 4vw;
+            text-align: center;
+        }
+        .details h2{
+            font-size: 4vw;
+            text-align: center;
+        }
+        .details h3{
+            font-size: 4vw;
+            text-align: center;
+        }
+        .details ul .li{
+            padding: 10px;
+        }
+        .details ul li{
+            font-size: 4vw;
+        }
+
+        .details .btn button{
+            font-size: 4vw;
+            text-align: center;
+        }
+
+    .dataEntry{
+        display: inline-block;
+        width: 100%;
+        background-image: url('/images/back.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+    }
+    .details{
+        display: inline-block;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .details ul{
+        padding: 0px;
+        display: block;
+    }
+    .details ul li{
+        list-style: none;
+    }
+   
+    .cardForm{
+        width: 100%;
+        padding: 2px;
+        margin: auto;
+    }
+    .form{
+        width: 90%;
+        padding: 0px;
+    }
+    .formdetails{
+        width: 90%;
+        margin: 10px auto;
+        padding: 5px;
+        box-shadow: 0px 0px 2px 1px blue;
+    }
+
+
+
+
+}
