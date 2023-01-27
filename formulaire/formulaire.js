@@ -42,17 +42,24 @@ document.getElementById("insert").onclick = function () {
     msg.textContent = "Antre non ou";
   }else if(emailV == ""){
     msg.textContent = "Antre Email ou";
+    msg.style.color = 'red';
   }else if(phoneV == ""){
     msg.textContent = "Antre Nimewo ou";
+     msg.style.color = 'red';
   }else if(adressV == ""){
+     msg.style.color = 'red';
     msg.textContent = "Antre Adress ou";
   }else if(dateV == ""){
+     msg.style.color = 'red';
     msg.textContent = "Antre Dat nesans ou";
   }else if(sexeV == ""){
+     msg.style.color = 'red';
     msg.textContent = "sleksyone seks ou";
   }else if(nV == ""){
+     msg.style.color = 'red';
     msg.textContent = "Selecksyone nivo ou";
   }else if(refV == ""){
+     msg.style.color = 'red';
     msg.textContent = "seleksyone yon referans ou";
   }else{
      firebase.database().ref('Kals Debitan A1/' + nameV).set({
@@ -114,22 +121,24 @@ document.getElementById("insert").onclick = function () {
       
       let postUrl = encodeURI(document.location.href);
       let postTitle = encodeURI(document.getElementById("h1").textContent + "\n"+"\n");
+      let sousTitle = encodeURI(document.getElementById("h2").textContent + "\n"+"\n");
+      let tTitle = encodeURI(document.getElementById("h3").textContent + "\n"+"\n");
       
       
       facebookBtn.setAttribute(
       "href",
-      `https://www.facebook.com/sharer.php?u=${postUrl}`
+      `https://www.facebook.com/sharer.php?u=${postTitle} ${sousTitle} ${tTitle} ${postUrl}`
       );
       
       twitterBtn.setAttribute(
       "href",
-      `https://twitter.com/share?url=${postUrl}&text=${postTitle}`
+      `https://twitter.com/share?url=${postTitle} ${sousTitle} ${tTitle} ${postUrl}`
       );
       
       
       whatsappBtn.setAttribute(
       "href",
-      `https://wa.me/?text=${postTitle} ${postUrl}`
+      `https://wa.me/?text=${postTitle} ${sousTitle} ${tTitle} ${postUrl}`
       );
       }
       init();
