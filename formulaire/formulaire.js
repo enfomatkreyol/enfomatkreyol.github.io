@@ -55,10 +55,7 @@ document.getElementById("insert").onclick = function () {
   }else if(refV == ""){
     msg.textContent = "seleksyone yon referans ou";
   }else{
-    firbase
-    .database()
-    .ref("Klas debitan baz/" + nameV)
-    .set({
+     firebase.database().ref('Kals Debitan A1/' + nameV).set({
       ANAME: nameV,
       Email: emailV,
       Number: phoneV,
@@ -76,7 +73,7 @@ document.getElementById("insert").onclick = function () {
   document.getElementById("sexe").value = "";
   document.getElementById("date").value = "";
   document.getElementById("Niv").value = "";
-  Nmref.value ="";
+  document.getElementById("ER").value ="";
   //window.location.reload();
   }
   
