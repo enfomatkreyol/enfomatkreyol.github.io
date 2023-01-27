@@ -1,5 +1,5 @@
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxS0HLzRsScc9no3-dU5SVzdXtH4vMxndUyFjyGEwCQSdDmlQHMFcEagj35hQDuMXfq5g/exec'
-const form = document.forms['google-sheet']
+const form = document.forms['INSCRIPTION-GW']
 form.addEventListener('submit', e => {
 e.preventDefault()
 fetch(scriptURL, { method: 'POST', body: new FormData(form)})

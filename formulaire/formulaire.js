@@ -120,9 +120,9 @@ document.getElementById("insert").onclick = function () {
       function init() {
       
       let postUrl = encodeURI(document.location.href);
-      let postTitle = encodeURI(document.getElementById("h1").textContent + "\n"+"\n");
-      let sousTitle = encodeURI(document.getElementById("h2").textContent + "\n"+"\n");
-      let tTitle = encodeURI(document.getElementById("h3").textContent + "\n"+"\n");
+      let postTitle = encodeURI(document.getElementById("h1").textContent);
+      let sousTitle = encodeURI(document.getElementById("h2").textContent);
+      let tTitle = encodeURI(document.getElementById("h3").textContent);
       
       
       facebookBtn.setAttribute(
