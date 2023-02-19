@@ -6,8 +6,7 @@ function inscrit(){
   form.style.display = 'block';
 }
 
-
-
+/*
 var emailV, nameV, phoneV, UrlV, sexeV, dateV, imagesV;
 
 function readFom() {
@@ -86,7 +85,7 @@ document.getElementById("insert").onclick = function () {
   
 };
 
-
+*/
 
    /* 
       
@@ -108,6 +107,52 @@ document.getElementById("insert").onclick = function () {
       https://www.linkedin.com/shareArticle?url=[post-url]&title=[post-title]
       
       */
+
+
+
+      var emailV, nameV, phoneV, UrlV, sexeV, dateV, imagesV;
+
+function readFom() {
+  emailV = document.getElementById("email").value;
+  nameV = document.getElementById("name").value;
+  phoneV = document.getElementById("phone").value;
+  adressV = document.getElementById("image").value;
+  dateV = document.getElementById("date").value;
+  sexeV = document.getElementById("sexe").value;
+  refV = document.getElementById("Ref").value;
+  nV = document.getElementById("Niv").value;
+  Nmref = document.getElementById("ER").value;
+  msg = document.getElementById("msg");
+  console.log(emailV, nameV, phoneV, nV, sexeV, dateV, adressV, refV);
+}
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyE2Lg9BQiePcs5wHgAgUUMbbh1n895rq5vQPZds-nS5-l8e2-ixWh2JpgnvqwyYyXYSQ/exec'
+const form = document.forms['google-sheet']
+
+form.addEventListener('submit', e => {
+e.preventDefault()
+fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => document.getElementById('myForm').style.display = "none")
+    .then(response => document.getElementById('msg').style.display = "block")
+    .then(response => window.location = document.getElementById('lien'))
+    .then(response => document.getElementById('name').value = '')
+    .then(response => document.getElementById('email').value = '')
+    .then(response => document.getElementById('phone').value = '')
+    .catch(error => console.error('Error!', error.message))
+});
+
+var refV = document.getElementById("Ref");
+
+document.getElementById("reference").style.display = "none";
+function select(){
+  readFom();
+  if(refV == "ED"){
+    document.getElementById("reference").style.display = "block";
+  }else{
+    document.getElementById("reference").style.display = "none";
+  }
+
+}
       
       const facebookBtn = document.querySelector(".facebook-btn");
       const twitterBtn = document.querySelector(".twitter-btn");
